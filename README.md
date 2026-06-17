@@ -47,7 +47,7 @@ Diseñar y automatizar 10 escenarios de prueba de interfaz gráfica para la apli
 │   ├── playwright.config.ts
 │   ├── package.json
 │   └── README.md
-├── Laboratorio_Pruebas_Automaticas_SPVR.pdf   # Documento de evidencias y resultados
+
 
 ```
 
