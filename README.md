@@ -82,7 +82,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema autentica al usuario y muestra el Dashboard con el mensaje "¡Hola de nuevo, Ana! 👋" y la sección "Mis trabajos recientes". |
 | **Estado** | ✅ PASÓ |
 
-![EP-01](./evidencias/EP-01-login-exitoso.png)
+![EP-01](frontend/evidencias/EP-01-login-exitoso.png)
 ### EP-02 Login fallido — contraseña incorrecta
 
 | Campo | Detalle |
@@ -93,7 +93,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema muestra el mensaje de error: "Correo o contraseña incorrectos." El usuario permanece en la pantalla de login. |
 | **Estado** | ✅ PASÓ |
 
-![EP-02](./evidencias/EP-02-login-fallido-password.png)
+![EP-02](frontend/evidencias/EP-02-login-fallido-password.png)
 ### EP-03 Login fallido — campos vacíos
 
 | Campo | Detalle |
@@ -104,7 +104,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema muestra el mensaje: "Ingresa tu correo y contraseña." El usuario permanece en la pantalla de login sin que se realice ninguna petición. |
 | **Estado** | ✅ PASÓ |
 
-![EP-03](./evidencias/EP-03-login-fallido-campos-vacios.png)
+![EP-03](frontend/evidencias/EP-03-login-fallido-campos-vacios.png)
 
 ### EP-04 Logout — cierra sesión y regresa al login
 
@@ -116,7 +116,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema elimina el token y los datos del usuario del localStorage, y redirige al usuario a la pantalla de login. |
 | **Estado** | ✅ PASÓ |
 
-![EP-04](./evidencias/EP-04-logout.png)
+![EP-04](frontend/evidencias/EP-04-logout.png)
 
 ### EP-05 Ruta protegida — sin sesión muestra login
 
@@ -128,7 +128,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema muestra únicamente la pantalla de login. No se muestran elementos del sistema interno como "Cargar CSV" o "Historial". |
 | **Estado** | ✅ PASÓ |
 
-![EP-05](./evidencias/EP-05-ruta-protegida.png)
+![EP-05](frontend/evidencias/EP-05-ruta-protegida.png)
 
 ### EP-06 Dashboard Analista — muestra lista de jobs
 
@@ -140,7 +140,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El Dashboard muestra la sección "Mis trabajos recientes" con el listado de trabajos del usuario, incluyendo sus estados (PROCESANDO, COMPLETADO, FALLIDO). |
 | **Estado** | ✅ PASÓ |
 
-![EP-06](./evidencias/EP-06-dashboard-jobs.png)
+![EP-06](frontend/evidencias/EP-06-dashboard-jobs.png)
 
 ### EP-07 Navegación — ir a Cargar CSV desde el sidebar
 
@@ -152,7 +152,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema navega a la pantalla "Cargar archivo CSV de ventas" con el formulario de carga y la lista de columnas requeridas. |
 | **Estado** | ✅ PASÓ |
 
-![EP-07](./evidencias/EP-07-cargar-csv.png) 
+![EP-07](frontend/evidencias/EP-07-cargar-csv.png) 
 ### EP-08 Upload — rechaza CSV con columnas incorrectas
 
 | Campo | Detalle |
@@ -164,7 +164,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Estado** | ✅ PASÓ |
 
 
-![EP-08](./evidencias/EP-08-upload-columnas-incorrectas.png)
+![EP-08](frontend/evidencias/EP-08-upload-columnas-incorrectas.png)
 ### EP-09 Historial — muestra reportes anteriores
 
 | Campo | Detalle |
@@ -175,7 +175,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El sistema muestra la pantalla "Historial de Reportes" con el listado de reportes generados anteriormente, incluyendo nombre de archivo, fecha, estado y acciones. |
 | **Estado** | ✅ PASÓ |
 
-![EP-09](./evidencias/EP-09-historial.png)
+![EP-09](frontend/evidencias/EP-09-historial.png)
 
 ### EP-10 Control de roles — Admin ve Registro de Errores
 
@@ -187,7 +187,7 @@ A continuación se presenta el detalle completo de cada uno de los 10 escenarios
 | **Resultado esperado** | El administrador ve el menú con "Registro Errores" pero NO ve en el menú lateral "Cargar CSV" que es exclusivo del analista. La pantalla de errores muestra el log del sistema. |
 | **Estado** | ✅ PASÓ |
 
-![EP-10](./evidencias/EP-10-admin-registro-errores.png)
+![EP-10](frontend/evidencias/EP-10-admin-registro-errores.png)
 
 ## Requisitos previos
 
